@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar Calzado</title>
+    <link rel="icon" href="/logo.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/imagenes y videos/logoPDG.jpeg"
+        alt="Paso de Grado"
+        width="200"
+        height="200"
+        style="display: block; margin: 0 auto"
+      />
+      <h1>A continuación completa los datos del calzado que buscas.</h1>
+    </header>
+
+    <main>
+      <nav>
+        <form action="https://formspree.io/f/mdknqwqy" method="post">
+          <div>
+            <label for="tip">Tipo de Calzado?</label>
+            <select id="tip" name="tip">
+              <option value="zto">Zapatos</option>
+              <option value="zya">Zapatilla</option>
+              <option value="bot">Botines</option>
+              <option value="bota">Botas</option>
+            </select>
+          </div>
+          <br />
+          <label for="talle">Talle:</label>
+          <input type="text" id="talle" name="talle" required /><br /><br />
+          <button type="submit">Enviar</button><br />
+        </form>
+        <br />
+        <a href="/index.html">Inicio</a>
+      </nav>
+    </main>
+
+    <section></section>
+
+    <footer><small>2024 - Version 0.1</small><br /><br /><br /></footer>
+  </body>
+</html>

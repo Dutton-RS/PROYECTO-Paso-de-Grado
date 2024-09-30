@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar Otros</title>
+    <link rel="icon" href="/logo.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/imagenes y videos/logoPDG.jpeg"
+        alt="Paso de Grado"
+        width="200"
+        height="200"
+        style="display: block; margin: 0 auto"
+      />
+      <h1>A continuación completa los datos.</h1>
+    </header>
+
+    <main>
+      <nav>
+        <form action="https://formspree.io/f/mdknqwqy" method="post">
+          <label for="art">Articulo:</label>
+          <input type="text" id="art" name="art" required /><br /><br />
+          <label for="q">Cantidad:</label>
+          <input type="text" id="q" name="q" required /><br /><br />
+          <div>
+            <label for="estado">Estado en que se encuentra?</label>
+            <select id="estado" name="estado">
+              <option value="b">Bueno</option>
+              <option value="mb">Muy Bueno</option>
+              <option value="cn">Como Nuevo</option>
+              <option value="n">Nuevo</option>
+            </select>
+          </div>
+          <label for="pre">Precio:</label>
+          <input type="text" id="pre" name="pre" required /><br /><br />
+          <label for="con">Contacto (Celular):</label>
+          <input type="text" id="con" name="con" required /><br /><br />
+          <button type="submit">Enviar</button><br />
+        </form>
+        <a href="/index.html">Inicio</a>
+      </nav>
+    </main>
+
+    <section></section>
+
+    <footer><small>2024 - Version 0.1</small><br /><br /><br /></footer>
+  </body>
+</html>
