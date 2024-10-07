@@ -4,45 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PDG</title>
-    <link rel="icon" href="../logo.ico" />
+    <link rel="icon" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="/css/estilos.css" />
   </head>
   <body>
     <header>
+      <h1>Paso De Grado</h1>
       <img
-        src="imagenes y videos/logoPDG.jpeg"
+        src="imagenes y videos/logoPDG.jpg"
         alt="Paso de Grado"
-        width="200"
-        height="200"
+        width="100"
+        height="100"
         style="display: block; margin: 0 auto"
       />
-      <h1>"El Sitio donde Comprar y Vender es GRATIS Y SIN INTERMEDIARIOS"</h1>
-      <h2>Descripción del sitio</h2>
       <h3>
-        " Podrás Comprar y Vender productos escolares USADOS (SIN
-        INTERMEDIARIOS) de cualquier COLEGIO o INSTITUCIÓN de Argentina "
+        El Sitio donde podrás<strong> Comprar, Vender o Intercambiar</strong>
+        productos escolares USADOS TOTALMENTE
+        <strong> GRATIS y SIN INTERMEDIARIOS</strong>
       </h3>
     </header>
 
     <main>
+      <h4>
+        " Todo el país, Todos los colegios. No esperes mas....regístrate ya! "
+      </h4>
       <nav>
-        <h2>Que deseas hacer?</h2>
         <ul>
-          <table>
-            <tr>
-              <th><a href="ubicacionv.html">Vender</a></th>
-              <th><a href="ubicacionc.html">Comprar</a></th>
-              <th><a href="carrito.html">Carrito</a></th>
-              <th><a href="misventas.html">Mis Ventas</a></th>
-              <th><a href="miscompras.html">Mis Compras</a></th>
-              <th><a href="perfil.html">Mi Perfil</a></th>
-              <th><a href="help.html">Ayuda</a></th>
-            </tr>
-          </table>
+          <a href="ubicacionv.html"> Vender </a>
+          <a href="ubicacionc.html"> Comprar </a>
+          <a href="intercambiar.html"> Intercambiar </a>
+          <a href="carrito.html">Mi Carrito</a>
+          <a href="perfil.html">Registrarte</a>
+          <a href="help.html">Ayuda</a>
         </ul>
+
+        <form id="buscador">
+          <input type="text" id="buscar" placeholder="Ingresa el articulo" />
+          <button id="boton-buscar">Buscar</button>
+          <div id="resultados"></div>
+        </form>
+
+        <script src="script.js"></script>
       </nav>
     </main>
+
     <section>
-      <video width="400" height="600" controls>
+      <video width="300" height="300" controls>
         <source src="imagenes y videos/presentacion.mp4" type="video/mp4" />
         <track
           src="subtitulos.vtt"
@@ -54,7 +61,51 @@
     </section>
 
     <footer>
+      <a href="whatsapp.com" target="_blank">
+        <img
+          src="/imagenes y videos/iconos/whatsapp-brands-solid.svg"
+          alt="Link a WhatsApp"
+          width="25"
+          height="25"
+        />
+      </a>
+
+      <a href="instagram.com" target="_blank">
+        <img
+          src="/imagenes y videos/iconos/instagram-brands-solid.svg"
+          alt="Link a Instagram"
+          width="25"
+          height="25"
+        />
+      </a>
+
+      <a href="facebook.com" target="_blank">
+        <img
+          src="/imagenes y videos/iconos/facebook-brands-solid.svg"
+          alt="Link a Facebook"
+          width="25"
+          height="25"
+        />
+      </a>
+
+      <a href="twitter.com" target="_blank">
+        <img
+          src="/imagenes y videos/iconos/x-twitter-brands-solid.svg"
+          alt="Link a Twitter"
+          width="25"
+          height="25"
+        />
+      </a>
+
+      <br />
       <small>2024 - Version 0.1</small>
+      <br />
+      <img
+        src="/imagenes y videos/banderaarg.png"
+        alt="Link a WhatsApp"
+        width="25"
+        height="25"
+      />
     </footer>
   </body>
 </html>
