@@ -1,0 +1,157 @@
+body {
+  background-color: rgb(152, 213, 250);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: rgb(76, 150, 196);
+  text-align: center;
+}
+
+nav a {
+  text-align: center;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000225;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.922);
+}
+
+form {
+  background-color: rgb(38, 79, 105);
+  text-align: center;
+  padding: 10px 10px;
+  color: rgb(247, 247, 247);
+}
+
+h1 {
+  color: rgb(14, 14, 14);
+  margin-left: 0px;
+}
+h5 {
+  width: auto;
+  background-color: rgb(76, 150, 196);
+  padding: 1em;
+  text-align: center;
+  color: rgb(14, 14, 14);
+  margin-left: 0px;
+  justify-content: center;
+}
+
+/* Flex */
+.container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+.item2 {
+  background: rgb(151, 193, 216);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  content: 15px;
+  margin: 10px;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  grid-gap: 1px;
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+}
+
+.grid-container > div {
+  background-color: rgb(152, 213, 250);
+  text-align: center;
+  font-size: 100px;
+  height: 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+}
+
+/* Small devices (600px and up) */
+
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (768px and up) */
+
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
+
+.container {
+  display: grid;
+  /* grid-template: filas / columnas; */
+  grid-template: 100px 1fr 100px / 400px 1fr;
+  grid-template-areas:
+    "header header"
+    "left contenido"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+.left {
+  grid-area: left;
+}
+
+.contenido {
+  grid-area: contenido;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+/* Estetica */
+.item {
+  background-color: rgb(76, 150, 196);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  /* grid-template: filas / columnas; */
+  grid-template: 50px 450px 50px / 500px 1fr;
+  grid-template-areas:
+    "header header"
+    "left contenido"
+    "footer footer";
+  grid-gap: 5px;
+  height: 100vh;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PDG</title>
     <link rel="icon" href="/favicon-16x16.png" />
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
     <header>
@@ -29,75 +29,90 @@
         " Todo el país, Todos los colegios. No esperes mas....regístrate ya! "
       </h4>
       <nav>
-        <ul>
-          <a href="ubicacionv.html"> Vender </a>
-          <a href="ubicacionc.html"> Comprar </a>
-          <a href="intercambiar.html"> Intercambiar </a>
-          <a href="carrito.html">Mi Carrito</a>
-          <a href="perfil.html">Registrarte</a>
-          <a href="help.html">Ayuda</a>
-        </ul>
-
-        <form id="buscador">
-          <input type="text" id="buscar" placeholder="Ingresa el articulo" />
-          <button id="boton-buscar">Buscar</button>
-          <div id="resultados"></div>
-        </form>
-
-        <script src="script.js"></script>
+        <a href="ubicacionv.html"> Vender </a>
+        <a href="ubicacionc.html"> Comprar </a>
+        <a href="intercambiar.html"> Intercambiar </a>
+        <a href="carrito.html">Mi Carrito</a>
+        <a href="perfil.html">Registrarte</a>
+        <a href="help.html">Ayuda</a>
       </nav>
+      <!-- Buscador -->
+      <form id="buscador">
+        <input
+          type="text"
+          id="buscar"
+          placeholder="Busca por el nombre del articulo"
+        />
+        <button id="boton-buscar">Buscar</button>
+        <div id="resultados"></div>
+      </form>
+
+      <script src="script.js"></script>
+      <div>
+        <h4>También podes comprar por rubro<br /></h4>
+        <nav>
+          <a href="/comprar/comprarlibros.html"> Libros </a>
+          <a href="/comprar/comprarcalzado.html"> Calzado </a>
+          <a href="/comprar/comprarindum.html"> Indumentaria </a>
+          <a href="/comprar/comprarartlib.html">Artículos Escolares</a>
+          <a href="/comprar/comprarotros.html">Mochilas y Otros</a>
+        </nav>
+      </div>
+      <br />
     </main>
+
     <section>
-      <div class="container">
+      <div class="container2">
         <!-- Flex container -->
-        <div class="item item-1">
+        <div class="item-2 item-1">
           <img
-            src="imagenes y videos/logoPDG.jpg"
+            src="imagenes y videos/libros.jpeg"
             alt="Paso de Grado"
-            width="100"
-            height="100"
+            width="150"
+            height="150"
             style="display: block; margin: 0 auto"
           />
         </div>
         <!-- Flex items -->
-        <div class="item item-2">
+        <div class="item-2 item-2">
           <img
-            src="imagenes y videos/logoPDG.jpg"
+            src="imagenes y videos/zapatos.png"
             alt="Paso de Grado"
-            width="100"
-            height="100"
+            width="150"
+            height="150"
             style="display: block; margin: 0 auto"
           />
         </div>
-        <div class="item item-3">
+        <div class="item-2 item-3">
           <img
-            src="imagenes y videos/logoPDG.jpg"
+            src="imagenes y videos/indumentaria.jpg"
             alt="Paso de Grado"
-            width="100"
-            height="100"
+            width="150"
+            height="150"
             style="display: block; margin: 0 auto"
           />
         </div>
-        <div class="item item-2">
+        <div class="item-2 item-4">
           <img
-            src="imagenes y videos/logoPDG.jpg"
+            src="imagenes y videos/articulosescolares.png"
             alt="Paso de Grado"
-            width="100"
-            height="100"
+            width="150"
+            height="150"
             style="display: block; margin: 0 auto"
           />
         </div>
-        <div class="item item-3">
+        <div class="item-2 item-5">
           <img
-            src="imagenes y videos/logoPDG.jpg"
+            src="imagenes y videos/mochila.png"
             alt="Paso de Grado"
-            width="100"
-            height="100"
+            width="150"
+            height="150"
             style="display: block; margin: 0 auto"
           />
         </div>
       </div>
     </section>
+    <br />
     <section>
       <video width="300" height="300" controls>
         <source src="imagenes y videos/presentacion.mp4" type="video/mp4" />
@@ -151,7 +166,7 @@
       <small>2024 - Version 0.1</small>
       <br />
       <img
-        src="/imagenes y videos/banderaarg.png"
+        src="/imagenes y videos/iconos/logobanderaarg.png"
         alt="Link a WhatsApp"
         width="25"
         height="25"

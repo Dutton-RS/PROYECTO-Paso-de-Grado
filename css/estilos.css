@@ -1,98 +1,124 @@
 body {
-  background-color: rgb(0, 152, 247);
+  background-color: rgb(152, 213, 250);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  background-color: rgba(39, 152, 222, 0.427);
+  background-color: rgb(76, 150, 196);
   text-align: center;
+  height: 230px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.922);
 }
 
 h1 {
   color: rgb(14, 14, 14);
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 h3 {
   color: rgb(14, 14, 14);
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 h4 {
   color: rgb(14, 14, 14);
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
-nav {
-  background-color: rgb(23, 89, 131);
+nav a {
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-bottom: 10px;
+  color: #000225;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.922);
 }
 
 form {
-  background-color: rgb(23, 89, 131);
+  background-color: rgb(38, 79, 105);
   text-align: center;
-  margin: 0;
-  padding: 0;
+  padding: 10px 10px;
   color: rgb(247, 247, 247);
 }
 
+/* Buscador */
 #buscador {
-  width: 200px;
+  width: 300px;
+  height: 70px;
+  background-color: rgb(152, 213, 250);
   margin: 10px auto;
-  padding: 20px;
-  border: 0px solid #ccc;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 #buscar {
   width: 100%;
   height: 30px;
-  padding: 0px;
   margin: auto;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.922);
 }
 
 #boton-buscar {
-  background-color: #006eff;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
+  border: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.922);
+  font-size: 12px;
 }
 
 #resultados {
   margin-top: 20px;
 }
+/* Flex */
+.container2 {
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.922);
+}
+.item-2 {
+  background: rgb(255, 255, 255);
+  width: 190px;
+  height: auto;
+  content: 15px;
+}
 
 .container {
   display: flex;
   flex-direction: row;
-  background: steelblue;
+  background: rgb(76, 150, 196);
   width: auto;
+  height: auto;
   justify-content: center;
 }
 
 .item {
-  background: black;
+  background: rgb(151, 193, 216);
   width: 150px;
-  height: 150px;
-  margin: 15px;
+  height: 200px;
+  margin: 10px;
+}
+
+/*visited 
+a:link {
+  overflow: hidden;
 }
 
 /* visited link 
-  overflow: hidden;
-
-
-/* visited link */
 a:link {
   padding: 20px 10px;
   text-align: center;
@@ -100,41 +126,29 @@ a:link {
   display: inline-block;
 }
 
-/* visited link */
+/*visited 
+link 
 a:visited {
   color: rgb(255, 255, 255);
 }
 
-/* mouse over link */
+/* mouse over
+link 
 a:hover {
-  color: rgb(0, 191, 255);
+  color: rgb(255, 255, 255);
 }
 
-/* selected link 
+/* selected 
+link 
 a:active {
-  color: rgb(255, 187, 0);
-  background-color: #5f76b0;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
+/* visited link */
 style div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 100px solid #db0707;
   float: left;
   width: 180px;
-}
-
-
-/* imágenes */
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
 }
